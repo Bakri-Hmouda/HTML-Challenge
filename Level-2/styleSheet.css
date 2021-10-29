@@ -1,9 +1,120 @@
+.grid-container {
+    display: grid;
+    height: minmax(100vh, auto);
+    justify-content: center;
+    grid-gap: 10px;
+    grid-template-columns: 0.5fr 1.5fr 1fr;
+    grid-auto-rows: minmax(70px, auto);
+    grid-template-areas: "header ... ..." "menu textBox textBox" "menu img img" "menu uList uList" " footer footer footer";
+}
+
+.grid-header {
+    grid-area: header;
+}
+
+.grid-textBox {
+    grid-area: textBox;
+}
+
+.grid-menu {
+    grid-area: menu;
+}
+
+.grid-img {
+    grid-area: img;
+}
+
+.grid-ulList {
+    grid-area: uList;
+}
+
+.grid-footer {
+    grid-area: footer;
+}
+
 body {
-    margin: 0%;
-    background-color: black;
+    margin: 10%;
+    margin-top: 0%;
+    background-color: rgb(24, 11, 47);
     color: white;
 }
 
 header h1 {
     text-align: center;
+    margin-top: 35px;
+    color: white;
+    background-color: lightcoral;
+    border-radius: 3px;
+    padding: 3%;
+}
+
+.grid-textbox {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2%;
+}
+
+.grid-menu {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 3%;
+}
+
+.grid-menu h6 {
+    color: lightgreen;
+    font-weight: bold;
+    font-size: 12pt;
+    text-align: center;
+    background-color: rgba(212, 181, 181, 0.657);
+    margin-top: 0%;
+}
+
+.grid-menu ul {
+    padding: 0%;
+    list-style-type: none;
+}
+
+.grid-menu li {
+    background-color: rgba(255, 255, 255, 0.15);
+    margin-top: 20px;
+    list-style: none;
+    color: lightblue;
+}
+
+.grid-menu a:link {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.grid-menu a:visited {
+    color: lightcoral;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.grid-menu a:hover {
+    color: lightgreen;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.bannerImage {
+    width: 100%;
+    height: auto;
+}
+
+.grid-ulList {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-left: 3rem;
+}
+
+footer {
+    background-color: rgba(151, 224, 133, 0.418);
+    display: flex;
+    justify-content: space-around;
+    padding: 0%;
+}
+
+.codiLogo {
+    width: 4rem;
+    height: 4rem;
 }
